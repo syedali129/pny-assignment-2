@@ -1,0 +1,157 @@
+
+.nav {
+    position:relative;
+    display:inline-block;
+    font-size:14px;
+    font-weight:900;
+    
+  }
+  ul {
+    list-style-type: none;
+  }
+  .nav-item {
+    float:left;
+    *display:inline;
+    zoom:1;
+  }
+  .nav-item a {
+    display:block;
+    padding:15px 20px;
+    color:#FFF;
+    background:#000000;
+    text-decoration: none;
+    
+  }
+  .nav-item:first-child a {
+    border-radius:5px 0 0 5px;
+  }
+  .nav-item:last-child a {
+    border-radius:0 5px 5px 0;
+  }
+  .nav-item a:hover {
+    background:#2C3E50;
+    
+  }
+
+  @media only screen and (min-width: 320px) and (max-width: 768px) {
+    .nav {
+      width:100%;
+      
+    }
+    .nav-item {
+      width:90%;
+      float:none;
+    }
+  }
+
+.main{
+    display: flex;
+    width: 100%;
+    background-image: url(./images/ass21.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.text{
+    float: left;
+    padding-left: 30px;
+    color: white;
+    padding-right: 110px;
+    padding-top: 60px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+   
+}
+.image{
+    float: right;
+    padding-right: 30px;
+   padding-top: 20px;
+   padding-bottom: 20px;
+   
+    
+}
+.jpg{
+    height: 300px;
+    border-radius: 30px;
+}
+.section1{
+    display: flex;
+    justify-content: center;
+   padding-top: 20px;
+    text-align:center;
+   
+    
+    
+}
+.box1{
+    float: left;
+    padding-left: 20px;
+    padding-right: 20px;
+    
+}
+
+.box3{
+    float: right;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+.gif{
+    height: 100px;
+    width: 100px;
+    
+  
+    
+}
+
+@media (max-width:701px){
+    img {
+      width: 200px; 
+      height: 50px; 
+      
+    }
+   }
+   @media (min-width:901px) and (max-width:1000px){
+    .jpg {
+        height: 350px;
+        width: 300px;
+   
+    }
+   } 
+   @media (min-width:651px) and (max-width:900px){
+    .jpg {
+        height: 250px;
+        width: 250px;
+        padding-left: 20px;
+   
+    }
+   }  
+   @media (min-width:360px) and (max-width:650px){
+    .jpg {
+    display:none;
+    padding-top: 30px;
+    }
+   }
+
+   @media (min-width:768px) and (max-width:900px) {
+    .text{
+        font-size: 14px;
+        padding-right: 10px;
+
+    }
+    
+   }
+   @media (max-width:767px) {
+    .text{
+        font-size: 11px;
+        padding-right: 10px;
+
+    }
+    
+   }
+   @media (max-width: 800px) {
+    .section1 {
+      flex-direction: column;
+      
+      
+    }
+  }
